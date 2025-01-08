@@ -1,1 +1,119 @@
-# Git 
+# 목차
+- Version Control System 이란?
+- Version Control System 역사
+
+- Git 최신 트렌드
+  - Github Actions / Gitlab CI YAML
+  - Github Integration / Gitlab Integration
+    - Jira, Confluence
+    - Slack, Teams
+    - Jenkins, CircleCI, ArgoCD, Terraform, ...
+  - Github Copilot / Gitlab Duo
+  - Github Codespaces / Gitlab Web IDE
+- Git 기본 개념
+  - Repsoitory
+    - local repository
+    - remote repository
+  - Staging Area
+  - Working Directory
+  - Commit
+  - Branch
+    - main branch
+    - feature branch
+    - hotfix branch
+    - release branch
+  - Conflict
+  - Merge
+      - Fast-Forward Merge
+      - Recursive Merge
+      - Squash & Merge
+      - Rebase & Merge
+      - [Reference](https://hudi.blog/git-merge-squash-rebase/)
+  - Forking
+  - Pull / Push
+- Git 기본 명령어
+  - git clone
+    - git clone --mirror 
+  - git init
+  - git add
+    - git add --patch
+  - git commit -m "message"
+    - git commit --amend
+  - git status
+  - git diff
+    - git diff HEAD
+  - git log --graph --oneline -n3
+  - git branch
+    - git branch -rv
+  - git checkout / git switch
+    - git checkout -b / git switch -c
+    - git restore
+      - Working Directory 복원
+    - git restore --staged
+      - Staging Area 복원
+  - git remote
+    - git remote -v 
+    - git remote add
+    - git remote remove
+    - git remote set-url, git remote get-url
+  - git push
+    - git push --tags
+    - git push --all
+  - git fetch
+    - git fetch --tags
+  - git pull
+  - git merge
+    - git merge --abort
+    - git merge --continue
+    - git merge -X ours / git merge -X theirs
+- Git 중급 명령어
+  - git reset
+    - git reset --hard
+    - git reset --soft
+    - git reset --mixed
+  - git revert
+  - git rebase
+    - git rebase -i
+    - git rebase --continue
+    - git rebase --abort
+  - git cherry-pick
+  - git stash
+    - Working Directory 임시 저장
+    - git stash list
+    - git stash apply
+    - git stash pop
+    - git stash drop
+    - git stash clear
+  - git add --patch
+    - git add -i
+  - git blame
+    - 히스토리상 보안적 이슈 해결하기   
+    - git filter-branch
+- Git 고급 명령어
+  - git submodule 
+- Git 유용한 팁
+  - .gitignore
+    - [gitignore.io](https://gitignore.io)
+    - Global .gitignore 설정
+  - git alias
+    ```bash
+    git config --global alias.graph "log --graph --oneline --all"
+    ```
+  - tig
+  - gh
+  - [semantic-release](https://github.com/semantic-release/semantic-release)
+- Pull Request / Merge Request
+  - Code Review
+- Branch 전략
+  - Git Flow
+  - Github Flow
+  - Gitlab Flow
+- CI/CD
+  - Jenkins
+  - CircleCI
+  - Github Actions
+  - Gitlab CI
+  - ArgoCD
+  - Terraform
+- Reference
+  - [online-tutorial](https://learngitbranching.js.org/)
